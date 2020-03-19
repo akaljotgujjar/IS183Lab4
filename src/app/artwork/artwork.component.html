@@ -64,50 +64,7 @@
                 <br><br>
                 <h1>Similar Products</h1>
                 <div class="similar-products">
-                    <div class="bordered">
-                        <img src="assets/img/thumbs/116010.jpg" alt="img1">
-                        <p class="small-text">Artist Holding a Thistle</p>
-                        <div class="btn-group">
-                            <button class="btn btn-primary btn-bordered"><i class="fas fa-info-circle"></i>
-                                View</button>
-                            <button class="btn btn-success btn-bordered"><i class="fas fa-gift"></i> Wish</button>
-                            <button class="btn btn-info btn-bordered"><i class="fas fa-shopping-cart"></i>
-                                Cart</button>
-                        </div>
-                    </div>
-                    <div class="bordered">
-                        <img src="assets/img/thumbs/120010.jpg" alt="img1">
-                        <p class="small-text">Portrait of Eleanor of Toledo</p>
-                        <div class="btn-group">
-                            <button class="btn btn-primary btn-bordered"><i class="fas fa-info-circle"></i>
-                                View</button>
-                            <button class="btn btn-success btn-bordered"><i class="fas fa-gift"></i> Wish</button>
-                            <button class="btn btn-info btn-bordered"><i class="fas fa-shopping-cart"></i>
-                                Cart</button>
-                        </div>
-                    </div>
-                    <div class="bordered">
-                        <img src="assets/img/thumbs/107010.jpg" alt="img1">
-                        <p class="small-text">Madame de Pempadour</p>
-                        <div class="btn-group">
-                            <button class="btn btn-primary btn-bordered"><i class="fas fa-info-circle"></i>
-                                View</button>
-                            <button class="btn btn-success btn-bordered"><i class="fas fa-gift"></i> Wish</button>
-                            <button class="btn btn-info btn-bordered"><i class="fas fa-shopping-cart"></i>
-                                Cart</button>
-                        </div>
-                    </div>
-                    <div class="bordered">
-                        <img src="assets/img/thumbs/106020.jpg" alt="img1">
-                        <p class="small-text">Girl with a Pearl Earring</p>
-                        <div class="btn-group">
-                            <button class="btn btn-primary btn-bordered"><i class="fas fa-info-circle"></i>
-                                View</button>
-                            <button class="btn btn-success btn-bordered"><i class="fas fa-gift"></i> Wish</button>
-                            <button class="btn btn-info btn-bordered"><i class="fas fa-shopping-cart"></i>
-                                Cart</button>
-                        </div>
-                    </div>
+                    <app-similar-product-card *ngFor="let item of similarProducts" [cardItem]="item"></app-similar-product-card>
                 </div>
             </div>
             <div class="art-c2">
